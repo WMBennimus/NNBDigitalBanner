@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/benja/Coding/C_gets_degree/glfw-3.3.9/tests/CMakeLists.txt
+  iconify.c
+  getopt.c
+  glad_gl.c
+  Generating Code...
+  iconify.vcxproj -> C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\Debug\iconify.exe

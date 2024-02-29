@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Control Panel: Nashville Nights Band Digital Banner</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <body>
+        <div id="top_part">
+            <img src="/images/banner_image.png" width="256" height="256">
+            <h1>The Nashville Nights Band</h1>
+            <h2>Digital Interactive Banner Control Panel</h2>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="option">
+            <div class="leftside">
+                <h1>Slideshow Mode</h1>
+            </div>
+            <div class="rightside">
+                <label class="switch">
+                    <input type="checkbox" id="smode" onchange="sendData(0,document.getElementById('smode').checked?1:0)">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <div class="option">
+            <div class="leftside">
+                <h1>Venue Name</h1>
+            </div>
+            <div class="rightside">
+                <input type="text" id="venuename" rows="1" maxlength="245" cols="30" onchange="sendData('v',document.getElementById('venuename').value)">
+            </div>
+        </div>
+        <div class="option">
+            <div class="leftside">
+                <h1>Downbeat</h1>
+            </div>
+            <div class="rightside">
+                <select id="db_h" onchange="sendTime()">
+                    <option value="00">00</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                </select>
+                <select id="db_m" onchange="sendTime()">
+                    <option value="00">00</option>
+                    <option value="05">05</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                    <option value="40">40</option>
+                    <option value="45">45</option>
+                    <option value="50">50</option>
+                    <option value="55">55</option>
+                </select>
+            </div>
+        </div>
+        <div class="option">
+            <div class="leftside">
+                <h1>Auto-switch on Downbeat</h1>
+            </div>
+            <div class="rightside">
+                <label class="switch">
+                    <input type="checkbox" id="astart" onchange="sendData(1,document.getElementById('astart').checked?1:0)">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+
+        <div class="option">
+            <div class="leftside">
+                <h1>Color 1</h1>
+            </div>
+            <div class="rightside">
+                <select id="color1" onchange="sendData('c',`0${document.getElementById('color1').value}`)">
+                    <option value="0">Black</option>
+                    <option value="1">Red (default)</option>
+                    <option value="2">Green</option>
+                    <option value="3">Blue</option>
+                    <option value="4">Cyan</option>
+                    <option value="5">Magenta</option>
+                    <option value="6">Yellow</option>
+                    <option value="7">White</option>
+                </select>
+            </div>
+        </div>
+        <div class="option">
+            <div class="leftside">
+                <h1>Color 2</h1>
+            </div>
+            <div class="rightside">
+                <select id="color2" onchange="sendData('c',`1${document.getElementById('color2').value}`)">
+                    <option value="0">Black</option>
+                    <option value="1">Red</option>
+                    <option value="2">Green (default)</option>
+                    <option value="3">Blue</option>
+                    <option value="4">Cyan</option>
+                    <option value="5">Magenta</option>
+                    <option value="6">Yellow</option>
+                    <option value="7">White</option>
+                </select>
+            </div>
+        </div>
+        <div class="option">
+            <div class="leftside">
+                <h1>Color 3</h1>
+            </div>
+            <div class="rightside">
+                <select id="color3" onchange="sendData('c',`2${document.getElementById('color3').value}`)">
+                    <option value="0">Black</option>
+                    <option value="1">Red</option>
+                    <option value="2">Green</option>
+                    <option value="3">Blue (default)</option>
+                    <option value="4">Cyan</option>
+                    <option value="5">Magenta</option>
+                    <option value="6">Yellow</option>
+                    <option value="7">White</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="option">
+            <div class="leftside">
+                <h1>Dynamic Base Light</h1>
+            </div>
+            <div class="rightside">
+                <label class="switch">
+                    <input type="checkbox" id="dbl">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <script>
+            const slideshow = 0;
+            const autoswitch = 1;
+            const baselight = 2;
+            const metaposts = 3;
+            function loadFromServer() {
+                fetch("/update.json")
+                    .then((response) => response.json())
+                    .then((json) => {
+                        document.getElementById("color1").selectedIndex = json.red;
+                        document.getElementById("color2").selectedIndex = json.green;
+                        document.getElementById("color3").selectedIndex = json.blue;
+                        var h = Math.floor(json.downbeat / 60);
+                        var m = json.downbeat - (h * 60);
+                        document.getElementById("db_h").selectedIndex = h;
+                        document.getElementById("db_m").selectedIndex = Math.floor(m / 5);
+                        document.getElementById("venuename").setAttribute("value", json.name);
+                        document.getElementById("smode").checked = json.slideshow;
+                        document.getElementById("astart").checked = json.autostart;
+                        document.getElementById("dbl").checked = json.baselight;
+                    });
+            }
+            loadFromServer();
+            function sendData(tag, data) {
+                if (tag == 'v' && typeof data === 'string') {
+                    for (var i = 0; i < data.length; i++) {
+                        if (data.charAt(i) == '%') {
+                            data = data.substr(0, i) + "%25" + data.substr(i+1);
+                            i = i + 2;
+                        }
+                    }
+                }
+                console.log("Sending to server '" + data + "' (tag: "+tag+")");
+                fetch("/update.json?" + tag + data)
+                    .then((response) => response.json())
+                    .then((json) => {
+                        document.getElementById("color1").selectedIndex = json.red;
+                        document.getElementById("color2").selectedIndex = json.green;
+                        document.getElementById("color3").selectedIndex = json.blue;
+                        var h = Math.floor(json.downbeat / 60);
+                        var m = json.downbeat - (h * 60);
+                        document.getElementById("db_h").selectedIndex = h;
+                        document.getElementById("db_m").selectedIndex = Math.floor(m / 5);
+                        document.getElementById("venuename").setAttribute("value", json.name);
+                        document.getElementById("smode").checked = json.slideshow;
+                        document.getElementById("astart").checked = json.autostart;
+                        document.getElementById("dbl").checked = json.baselight;
+                    });
+            }
+            function sendTime() {
+                var h = document.getElementById("db_h").value;
+                var m = document.getElementById("db_m").value;
+                sendData('t', "" + h + m);
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{573A0082-E771-30E6-9A61-71464D7581C0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/benja/Coding/C_gets_degree/glfw-3.3.9/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\benja\scoop\apps\cmake\3.28.1\bin\cmake.exe -SC:/Users/benja/Coding/C_gets_degree/glfw-3.3.9 -BC:/Users/benja/Coding/C_gets_degree/glfw-3.3.9/build --check-stamp-file C:/Users/benja/Coding/C_gets_degree/glfw-3.3.9/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\3.28.1\CMakeSystem.cmake;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\cmake_uninstall.cmake.in;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\src\glfw3.pc.in;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\src\glfw3Config.cmake.in;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\src\glfw_config.h.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDependentOption.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindDoxygen.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindThreads.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\GNUInstallDirs.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/benja/Coding/C_gets_degree/glfw-3.3.9/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\benja\scoop\apps\cmake\3.28.1\bin\cmake.exe -SC:/Users/benja/Coding/C_gets_degree/glfw-3.3.9 -BC:/Users/benja/Coding/C_gets_degree/glfw-3.3.9/build --check-stamp-file C:/Users/benja/Coding/C_gets_degree/glfw-3.3.9/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\3.28.1\CMakeSystem.cmake;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\cmake_uninstall.cmake.in;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\src\glfw3.pc.in;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\src\glfw3Config.cmake.in;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\src\glfw_config.h.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDependentOption.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindDoxygen.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindThreads.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\GNUInstallDirs.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/benja/Coding/C_gets_degree/glfw-3.3.9/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\benja\scoop\apps\cmake\3.28.1\bin\cmake.exe -SC:/Users/benja/Coding/C_gets_degree/glfw-3.3.9 -BC:/Users/benja/Coding/C_gets_degree/glfw-3.3.9/build --check-stamp-file C:/Users/benja/Coding/C_gets_degree/glfw-3.3.9/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\3.28.1\CMakeSystem.cmake;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\cmake_uninstall.cmake.in;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\src\glfw3.pc.in;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\src\glfw3Config.cmake.in;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\src\glfw_config.h.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDependentOption.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindDoxygen.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindThreads.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\GNUInstallDirs.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/benja/Coding/C_gets_degree/glfw-3.3.9/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\benja\scoop\apps\cmake\3.28.1\bin\cmake.exe -SC:/Users/benja/Coding/C_gets_degree/glfw-3.3.9 -BC:/Users/benja/Coding/C_gets_degree/glfw-3.3.9/build --check-stamp-file C:/Users/benja/Coding/C_gets_degree/glfw-3.3.9/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\3.28.1\CMakeSystem.cmake;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\cmake_uninstall.cmake.in;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\src\glfw3.pc.in;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\src\glfw3Config.cmake.in;C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\src\glfw_config.h.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDependentOption.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindDoxygen.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\FindThreads.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\GNUInstallDirs.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\benja\scoop\apps\cmake\3.28.1\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\ZERO_CHECK.vcxproj">
+      <Project>{8402DA32-B69C-330D-847F-CA3F5F42A45A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\examples\boing.vcxproj">
+      <Project>{8ECCDD63-DED4-341E-8D7D-8A5C967A1FCB}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\clipboard.vcxproj">
+      <Project>{A2E65CA2-27A8-3F9B-BB86-A936BE0E6749}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\cursor.vcxproj">
+      <Project>{3CD55AB7-140D-3CD8-85F1-CBABA4EF0164}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\empty.vcxproj">
+      <Project>{FEF86B1F-5F36-34AF-A98D-A94F457DA332}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\events.vcxproj">
+      <Project>{522B35AF-B449-3C76-82F6-685EA91F8669}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\gamma.vcxproj">
+      <Project>{DA89E625-7A81-389A-9995-C991C2C47C7E}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\examples\gears.vcxproj">
+      <Project>{46722C0E-933C-37A0-956D-4412F6EFCEF3}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\src\glfw.vcxproj">
+      <Project>{BF0981DE-2F8F-3754-9349-0DA30F67AE2D}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\glfwinfo.vcxproj">
+      <Project>{6BDB2B24-1B5F-3D22-B2F9-1E59A7860162}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\examples\heightmap.vcxproj">
+      <Project>{C9A1B3FD-2E4B-3DE0-A211-99CAE6FA90A1}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\icon.vcxproj">
+      <Project>{9908C6AB-9ED5-30D2-AD1F-1F2342A8137D}</Project>
+      <Name>icon</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\iconify.vcxproj">
+      <Project>{7EA391A8-CFD9-3132-906B-C6A9E65B2114}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\inputlag.vcxproj">
+      <Project>{26D0D1AF-7D9A-3C07-AD30-700AF5098CD5}</Project>
+      <Name>inputlag</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\joysticks.vcxproj">
+      <Project>{6B6614C9-CC77-3F05-A8AD-AAA89ADDA92A}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\monitors.vcxproj">
+      <Project>{4C5287FF-855E-35E4-A066-74B025A99D50}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\msaa.vcxproj">
+      <Project>{84755CA3-EA8F-3DE0-88CA-C6232CFCF3E5}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\examples\offscreen.vcxproj">
+      <Project>{0B8BE8E6-6DB0-3D45-B734-7F17FD0FB79D}</Project>
+      <Name>offscreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\opacity.vcxproj">
+      <Project>{8330D344-2818-3A3A-9525-F6323A29D422}</Project>
+      <Name>opacity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\examples\particles.vcxproj">
+      <Project>{861ADFC1-7F31-31B1-A351-6684C14AD1C9}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\reopen.vcxproj">
+      <Project>{E682D182-E545-3A47-8AEE-E3B0387A65BD}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\examples\sharing.vcxproj">
+      <Project>{0D59371F-5330-3A1A-8685-629EA4690371}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\examples\simple.vcxproj">
+      <Project>{F2E83631-451D-3273-A594-3AB80992897A}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\examples\splitview.vcxproj">
+      <Project>{EA409231-F273-388A-8E90-88537838BB35}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\tearing.vcxproj">
+      <Project>{153430F1-40EE-312D-BEE6-7FB69F6BCC5A}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\threads.vcxproj">
+      <Project>{59AEB1AB-A615-32EE-821C-4F8A225A65ED}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\timeout.vcxproj">
+      <Project>{4331F8CD-A5C8-3DD2-B52F-31E444D0306F}</Project>
+      <Name>timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\title.vcxproj">
+      <Project>{DED18CA1-3796-3CBC-8D84-110F8624FA50}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\triangle-vulkan.vcxproj">
+      <Project>{3E4F0453-3515-33E6-807E-FFD0D3E78FF7}</Project>
+      <Name>triangle-vulkan</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\examples\wave.vcxproj">
+      <Project>{48C4E4FE-2CDD-379E-94A5-C2CDABD3C7A9}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\benja\Coding\C_gets_degree\glfw-3.3.9\build\tests\windows.vcxproj">
+      <Project>{8B5E990A-70F8-3018-A915-294FBBC06BD4}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
